@@ -1,0 +1,9 @@
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <a routerLink="/book-details">
+    <label class="btn btn-success active">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> {{ totalPrice | currency: 'USD' }} |
+      <span>{{ totalQuantity }}</span>
+
+    </label>
+  </a>
+</div>

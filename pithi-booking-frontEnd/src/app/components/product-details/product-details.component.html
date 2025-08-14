@@ -1,0 +1,30 @@
+
+<div class="detail-section">
+<div class="card">
+  <h5 class="card-header">{{ product.name }}</h5>
+    <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{ product.imageUrl }}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8" style="text-align: left;">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.price | currency:'USD' }}</h5>
+       <button (click)="addToBooks(product)" class="btn btn-primary btn-lg">Book Now</button>
+
+
+        <h4>Description</h4>
+        <p class="card-text">{{ product.description }}</p>
+        <div>
+              <a routerLink="/products" class="mt-5">Back to Product List</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+
+

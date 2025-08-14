@@ -1,0 +1,55 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div *ngIf="bookItems.length > 0">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+
+                            <th scope="col">Product Image</th>
+                            <th scope="col">Product Detail</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let tempBookItem of bookItems">
+                            <td>
+                                <img src="{{ tempBookItem.imageUrl }}" class="img-responsive" width="150px" />
+                            </td>
+                            <td>
+                                <p>{{ tempBookItem.name }}</p>
+                                <p>{{ tempBookItem.price | currency: 'USD' }}</p>
+                            </td>
+                            <td>
+                                <div class="items">
+                                    <label>Quantity:</label> {{ tempBookItem.quantity }}
+                                </div>
+                                <button (click)="remove(tempBookItem)" class="btn btn-primary btn-sm mt-2">Cancle</button>
+
+                                <p class="mt-2">Subtotal: {{ tempBookItem.quantity * tempBookItem.price | currency:
+                                    'USD' }}
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"></td>
+                            <td style="font-weight: bold">
+                                <p>Total Quantity: {{ totalQuantity }}</p>
+                                <p>Total Price: {{ totalPrice | currency: 'USD' }}</p>
+                                <a routerLink="/checkout" class="btn btn-primary">checkout</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- if cart is empty then display a message -->
+            <div *ngIf="bookItems.length == 0" class="alert alert-warning col-md-12" role="alert">
+                Your shopping cart is empty.
+            </div>
+
+
+        </div>
+    </div>
+</div>

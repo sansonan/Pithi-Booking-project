@@ -1,0 +1,297 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 50%;
+  /* Set width to 100% */
+  margin: auto;
+  min-height: 50px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  border-radius: 0;
+
+}
+
+.search-bar {
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  padding-left: 40px;
+  height: 44px;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  color: #888;
+}
+
+.btn-outline-purple {
+  color: #5624d0;
+  border: 1px solid #5624d0;
+}
+
+.btn-purple {
+  background-color: #5624d0;
+  color: white;
+}
+
+.circle-btn {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+.logo-text span {
+  color: #a435f0;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #5624d0;
+  /* optional: your custom hover color */
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+div.gap-3 a:hover {
+  background-color: #5624d0;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white !important;
+}
+
+
+.gap-3 .dropdown button:hover {
+  background-color: #5624d0;
+  font-size: 14px;
+  color: white !important;
+}
+
+.border-cover {
+  border: 1px solid #959498;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.panel {
+  border: 1px solid #5624d0;
+  border-radius: 5px !important;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #5624d0;
+  background-color: #fff !important;
+  color: #5624d0;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #5624d0 !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+  background-color: white !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #5624d0;
+  color: #fff;
+}
+
+.detail-section {
+  margin-top: 60px
+}
+
+.detail-img {
+  width: 30%;
+}
+
+.price {
+  margin: 15px 0 0;
+  font-weight: 800;
+  color: #0da8e4
+}
+
+.main-content{
+    padding-top:116px;
+    min-height:100vh
+}
+
+.section-content-p30{
+    padding:0 30px
+}
+
+a.primary-btn{
+    background:#5624d0;
+    padding:7px 20px;
+    text-align:center;
+    display:inline-block;
+    color:#fff;
+    border-radius:2px;
+    font-size:14px;
+    margin-top:5px
+}
+a.primary-btn:hover{
+    background:#0da8e4;
+    color:#fff
+}
+
+
+
+
+
+.cart-area.d-n{
+    display:block
+}
+
+.cart-area i{
+    font-size:22px;
+    float:left;
+    margin-top:16px;
+    color:#fff;
+    margin-left:15px
+}
+
+.total{
+    background:#205b8d;
+    /* line-height:43px; */
+    color:#fff;
+    border-radius:30px;
+    border:1px solid #0da8e4;
+    float:left;
+    margin-top:7px;
+    padding-left:17px
+}
+
+.total span{
+    display:inline-block;
+    background:#fff;
+    padding:0 13px;
+    color:#000;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-left:11px
+}
+
+
+.main-content{
+    padding-top:50px;
+    min-height:20vh;
+    overflow: hidden;
+
+}
+
+.section-content-p30{
+    padding:0 30px;
+     overflow: hidden;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+
+.form-area{
+    background:#ffffff;
+    position:relative;
+    margin-bottom:45px;
+    padding:50px 20px;
+    border:3px solid #ccc
+}
+.form-area h3{
+    position:absolute;
+    top:-35px;
+    left:18px;
+    background:#ffffff;
+    padding:1px 20px;
+    font-weight:500;
+    z-index:23;
+    display:inline-block
+}
+
+.input-space{
+    margin-bottom:20px
+}
+.input-space label{
+    padding-left:31px;
+    font-size:14px;
+    margin-bottom:50px
+}
+.input-space input[type=text]{
+    width:100%;
+    height:40px;
+    border-radius:30px;
+    outline:0;
+    padding:10px;
+    border:1px solid #ccc
+}
+.input-space select{
+    width:100%;
+    height:40px;
+    border-radius:30px;
+    outline:0;
+    padding:0 10px;
+    border:1px solid #ccc
+}
