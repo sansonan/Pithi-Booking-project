@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<changeSet id="3" author="yourname">
+    <preConditions onFail="MARK_RAN">
+        <not>
+            <tableExists tableName="review"/>
+        </not>
+    </preConditions>
+        <createTable tableName="review">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="vendor_id" type="BIGINT"/>
+            <column name="rating" type="INT"/>
+            <column name="comment" type="VARCHAR(500)"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="review"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
